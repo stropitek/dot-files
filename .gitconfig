@@ -1,0 +1,10 @@
+[user]
+	email = kostro.d@gmail.com
+	name = Daniel Kostro
+[core]
+	excludesfile = /home/stropitek/.gitignore_global
+[color]
+	ui = true
+[push]
+	default = simple
+
