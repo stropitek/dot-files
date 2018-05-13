@@ -112,3 +112,5 @@ function mingz () { curl -sL wzrd.in/standalone/"$1"|uglifyjs -mc 2>/dev/null|gz
 
 alias cheminfo-eslint="npm i -D eslint-config-cheminfo eslint eslint-plugin-import eslint-plugin-jest"
 
+export EDITOR=vim
+export REACT_EDITOR=code
