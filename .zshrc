@@ -114,3 +114,8 @@ alias cheminfo-eslint="npm i -D eslint-config-cheminfo eslint eslint-plugin-impo
 
 export EDITOR=vim
 export REACT_EDITOR=code
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
