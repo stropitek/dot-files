@@ -90,10 +90,14 @@ export NVM_DIR="/home/stropitek/.nvm"
 # nvm environment variable
 export NODE_REPL_HISTORY_FILE="/home/stropitek/.node_history"
 
+# go environment variables
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/programs/go
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
+
+export fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
 
 ### ZNT's installer added snippet ###
 znt_list_instant_select="1"
