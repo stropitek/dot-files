@@ -5,3 +5,6 @@
 !/.gitignore_global
 !/.gitconfig
 !/.vimrc
+!/.config
+/.config/*
+!/.config/znt
