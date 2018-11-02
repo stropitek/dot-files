@@ -9,3 +9,4 @@
 /.config/*
 !/.config/znt
 /.config/znt/mostfrequent.db
+/.config/znt/privhist.db
