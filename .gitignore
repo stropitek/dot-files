@@ -8,3 +8,4 @@
 !/.config
 /.config/*
 !/.config/znt
+/.config/znt/mostfrequent.db
