@@ -92,6 +92,19 @@ export NVM_DIR="/home/stropitek/.nvm"
 # nvm environment variable
 export NODE_REPL_HISTORY_FILE="/home/stropitek/.node_history"
 
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
 # go environment variables
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/programs/go
